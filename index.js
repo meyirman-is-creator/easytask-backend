@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 3001;
 
 const corsOptions = {
-  origin: ['https://easy-task-frontend.vercel.app', 'http://localhost:3000'],
+  origin: 'https://easy-task-frontend.vercel.app',
   optionsSuccessStatus: 200,
 };
 
