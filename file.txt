@@ -1,1 +1,0 @@
-https://www.uniqlo.com/jp/api/commerce/v5/ja/products/E465136-000/price-groups/00/similar-products?imageRatio=3x4&httpFailure=true
