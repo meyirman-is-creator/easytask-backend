@@ -12,9 +12,14 @@ const corsOptions = {
   origin: 'https://easy-task-frontend.vercel.app',
   optionsSuccessStatus: 200,
 };
-
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://easy-task-frontend.vercel.app');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
 app.use(cors(corsOptions));
 app.use(express.json());
+
 
 app.use('/api/:productId', createProxyMiddleware({
   target: 'https://www.uniqlo.com',
