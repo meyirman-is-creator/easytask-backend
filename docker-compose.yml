@@ -7,4 +7,3 @@ services:
       - "3001:3001"
     environment:
       - PORT=3001
-      - TARGET_URL=https://www.uniqlo.com
